@@ -1,11 +1,16 @@
 @use 'hero';
+@use 'componentes/infos_bar';
+@use 'componentes/buttons';
+@use 'event';
+@use 'variaveis';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: variaveis.$corDoTexto1;
+    list-style: none;
 }
 
 .container {
@@ -18,6 +23,6 @@
     }
 
     @media (max-width: 1024px) {
-        max-width: 90px;
+        max-width: 90%;
     }
 }
